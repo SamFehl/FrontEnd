@@ -1,0 +1,82 @@
+<html>
+    <title>Users Update</title>
+
+    <head>
+        <!--Style Sheet-->
+        <link rel="stylesheet" href="./stylesheets/style.css" />
+
+        <!--Bootstrap-->
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+    </head>
+    
+    <body>
+        <h1 class="pages-text-center">Users Update</h1>
+
+        
+
+        <form class="form">
+            <!--make this a dropdown instead of a post by changing the type, then update everything the same way-->
+            <div class="form-group">
+                <label for="id"><b>ID:</b></label>
+                <input name="id" id="id" type="" class="form-control" placeholder="Input ID">
+            </div>
+
+            <div class="form-group">
+                <label for="first"><b>First:</b></label>
+                <input name="first" id="first" type="text" class="form-control" placeholder="First Name">
+            </div>
+
+            <div class="form-group">
+                <label for="last"><b>Last:</b></label>
+                <input name="last" id="last" type="text" class="form-control" placeholder="Last Name">
+            </div>
+
+            <div class="form-group">
+                <label for="email"><b>Email Address:</b></label>
+                <input name="email" id="email" type="text" class="form-control" placeholder="example@gmail.com">
+            </div>
+
+            <div class="form-group">
+                <label for="phone"><b>Phone Number:</b></label>
+                <input name="phone" id="phone" type="text" class="form-control" placeholder="### - ### - ####">
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Update</button>
+            </div>
+
+        </form>
+
+
+
+        <!-- Button Flow at the top header -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="home-button">
+                    <button class="btn btn-secondary" onclick="window.location.href='users.html'">Home</button>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+        <!-- CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+        <!-- This is for toast messages-->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="./js/jquery.toaster.js"></script>
+
+        <!--Post API: call to add data to db-->
+        <script src="./js/updateUsers.js"></script>
+
+</html>
