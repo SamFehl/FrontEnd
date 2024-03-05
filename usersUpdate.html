@@ -24,7 +24,21 @@
             <!--make this a dropdown instead of a post by changing the type, then update everything the same way-->
             <div class="form-group">
                 <label for="id"><b>ID:</b></label>
-                <input name="id" id="id" type="" class="form-control" placeholder="Input ID">
+                <select name="id" id="id" class="form-control" placeholder="Input ID" onChange="getByID" required>
+                    <option value="no selection" selected>no selection</option>
+                    <option value="ex1">ex 1</option>
+                    <option value="ex2">ex 2</option>
+                    <option value="ex3">ex 3</option>
+                    <!-- code for connecting to db? first line should be in db.js? getId is in queries.js, api route needs to be added
+                    goes in queries.js:list_of_ids = getId("select id from users")
+                    goes in routes.js: @app.route("/")
+                        def index():
+                            return render_template("usersUpdate.html", list_of_ids = list_of_ids)
+                    goes in usersUpdate.html: {% for userId in list_of_ids %}
+                        <option value={{userId.lower()}}>{{userId}}</option>
+                    {% endfor %}
+                    -->
+                </select>
             </div>
 
             <div class="form-group">
