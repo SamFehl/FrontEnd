@@ -15,4 +15,5 @@ formEl.addEventListener('submit', event => {
           .then(data => console.log(data))
           .then(error => console.log(error))
           $.toaster({priority: 'success', title: 'Users', message: "updated user. who got divorced?"})
-}).render(document.getElementById("form-group"));
+});
+//.render(document.getElementById("form-group"));
