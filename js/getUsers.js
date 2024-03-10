@@ -12,7 +12,7 @@ new gridjs.Grid({
         {name: "first", width: "100px"},
         {name: "last", width: "100px"},
         {name: "email", width: "100px"},
-        {name: "phone", width: "100px"}, ],
+        {name: "phone", width: "100px"} ],
     
     server: {
         //local url, change for github upload
