@@ -4,6 +4,7 @@ body {
   margin: 0px;
   font-family: 'Nunito', sans-serif;
   font-size: 16px;
+  text-align: center;
 }
 
 input, button {
@@ -19,6 +20,7 @@ input, button {
   margin-top: 150px;
   padding: 20px;
   font-size: 20px;
+  text-align: center;
 }
 
 .main-div input {
@@ -34,6 +36,7 @@ input, button {
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   font-size: 20px;
+  text-align: center;
 }
 
 .main-div input:focus {
@@ -53,6 +56,7 @@ input, button {
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   font-size: 20px;
+  text-align: center;
 }
 
 div.relative {

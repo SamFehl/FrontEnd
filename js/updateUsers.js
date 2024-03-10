@@ -4,14 +4,9 @@ formEl.addEventListener('submit', event => {
     event.preventDefault();
     const formData = new FormData(formEl);
     const data = Object.fromEntries(formData);
-    //optional conditional statement to ensure information is actually input
-    if (data.id === "" || data.first === "" || data.last === "" || data.email === "" || data.phone === ""){
-        $.toaster({ priority: 'danger', title: 'Error', message: "it's called a database, not a nothing base"})
-    }
-    else {
         //Set up for local use, change for github
         fetch('http://localhost:5503/api/v1/users', {
-            method: 'POST',
+            method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -19,6 +14,5 @@ formEl.addEventListener('submit', event => {
         }).then(res => res.json())
           .then(data => console.log(data))
           .then(error => console.log(error))
-          $.toaster({priority: 'success', title: 'Users', message: "updated last name. who got divorced?"})
-    }
-});
+          $.toaster({priority: 'success', title: 'Users', message: "updated user. who got divorced?"})
+}).render(document.getElementById("form-group"));

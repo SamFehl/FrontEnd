@@ -6,7 +6,7 @@ formEl.addEventListener('submit', event => {
     const data = Object.fromEntries(formData);
     //optional conditional statement to ensure information is actually input
     if (data.id === "" || data.first === "" || data.last === "" || data.email === "" || data.phone === ""){
-        $.toaster({ priority: 'danger', title: 'Error', message: "it's called a database, not a nothing base"})
+        $.toaster({ priority: 'danger', title: 'Error', message: "it's called a database, not a nothing base. user not added."})
     }
     else {
         //Set up for local use, change for github
