@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
   
     // Replace this URL with the API endpoint or data source you want to use
-    const apiUrl = "https://localhost:5503/api/v1/users/";
+    const apiUrl = "https://localhost:5504/api/v1/userID/";
   
     fetch(apiUrl)
         .then((response) => {
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
       //API
       
-      fetch("https://localhost:5503/api/v1/users/" + selectedValue)
+      fetch("https://localhost:5504/api/v1/userID/" + selectedValue)
     .then((response) => {
       if (response.ok) {
         return response.json();
