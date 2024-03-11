@@ -21,13 +21,14 @@
         <form class="form">
             <div class="form-group">
                 <label for="id"><b>ID:</b></label>
-                <select name="id" id="id" class="form-control" placeholder="Input ID" onChange="getListID" required>
-                    {% for userId in idList %}
-                        <option value="{{userId}}">{{userId}}</option>
-                    {% endfor %}
+                <select name="id" id="dropdown" class="form-control" placeholder="Input ID">
+                    <!--{% for id in idList %}
+                        <option value="{{id}}">{{id}}</option>
+                    {% endfor %}-->
                 </select>
             </div>
 
+        
             <div class="form-group">
                 <label for="first"><b>First:</b></label>
                 <input name="first" id="first" type="text" class="form-control" placeholder="First Name">
@@ -51,7 +52,7 @@
             <div class="form-group">
                 <button type="submit" class="btn btn-primary btn-lg btn-block">Update</button>
             </div>
-
+            
         </form>
 
 
@@ -79,7 +80,7 @@
         <script src="./js/jquery.toaster.js"></script>
 
         <!--Put API: call to modify data in db-->
-        <script src="./js/getUsers.js"></script>
+        <script src="./js/getListID.js"></script>
         <script src="./js/updateUsers.js"></script>
 
 </html>
