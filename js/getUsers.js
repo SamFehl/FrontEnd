@@ -17,6 +17,7 @@ new gridjs.Grid({
     server: {
         //local url, change for github upload
         url: "http://localhost:5503/api/v1/users",
+        //url: "http://localhost:5503/api/v1/users",
         then: (data) => {
             data.sort((a,b) => b.id - a.id);
             return data.map((users) => [

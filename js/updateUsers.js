@@ -6,6 +6,7 @@ formEl.addEventListener('submit', event => {
     const data = Object.fromEntries(formData);
         //Set up for local use, change for github
         fetch('http://localhost:5503/api/v1/users', {
+        //fetch('http://localhost:5503/api/v1/users', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'

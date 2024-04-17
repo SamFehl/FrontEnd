@@ -11,6 +11,7 @@ formEl.addEventListener('submit', event => {
     else {
         //Set up for local use, change for github
         fetch('http://localhost:5503/api/v1/users', {
+        //fetch('https://api:5432/api/v1/users', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
